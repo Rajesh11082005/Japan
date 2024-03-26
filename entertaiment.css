@@ -1,0 +1,142 @@
+.entertaiment-wrapper{
+    /* border: 3px solid red; */
+    margin-top: 300px;
+    height: 1100px;
+    position: relative;
+    /* overflow: hidden; */
+    color: wheat;
+}
+.line-entertaiment {
+    position: absolute;
+    border-right: 3px solid #fe222dcc;
+    height: 180px;
+    opacity: 0.5;
+    top: -160px;
+    left: 50%;
+}
+.anime-img-wrapper {
+    width: 75%;
+    height: 60%;
+    margin-top: 40px;
+    margin: auto;
+    position: relative;
+}
+.entertaiment-header{
+    text-align: center;
+    font-family: 'MedievalSharp', cursive;
+    width: 40%;
+    margin: 10px auto;
+    padding: 40px 10px;
+
+}
+.entertaiment-header > h3, .entertaiment-header > h2{
+    font-size: 50px;
+}
+.entertaiment-header > h3{
+    color: rgb(152, 152, 152);
+}
+.entertaiment-header > h3:hover{
+    cursor: pointer;
+    color: white;
+}
+.entertaiment-header > h2{
+    color: #fe222dcc;
+}
+.entertaiment-header > p {
+    font-size: 20px;
+    color: rgb(135, 133, 133);
+    letter-spacing: 3px;
+}
+.img-anime-wrapper{
+    position: absolute;
+    /* width: 900px; */
+    /* display: inline-block; */
+    /* border: 4px solid firebrick; */
+}
+.one-piece{
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 28.5%;
+}
+.naruto{
+    left: 35%;
+    top: 0;
+    width: 35%;
+    height: 28.5%;
+
+}
+.attack-on-titan{
+    width: 30%;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+.bleach{
+    width:70%;
+    height: 43%;
+    top: 28.5%;
+}
+.dragon-ball{
+    width: 35%;
+    height: 28.5%;
+    bottom: 0;
+    left: 0;
+}
+.pokemon{       
+    width: 35%;
+    height: 28.5%;
+    left: 35%;
+    bottom: 0;
+}
+.anime-heading{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    transition: 1s;
+}
+.anime-heading > h1{
+    text-align: center;
+    padding: 10%;
+    font-size: 250%;
+    color: white;
+    font-family: 'MedievalSharp', cursive;
+}
+.anime{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-anime-wrapper:hover .anime{
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+.anime-1{
+    background-image: url("606263.jpg");
+}
+.anime-2{
+    background-image: url("135625.jpg");
+}
+.anime-3{
+    background-image: url("wallpaperflare.com_wallpaper (11).jpg");
+}
+.anime-4{
+    background-image: url("wallpaperflare.com_wallpaper (12).jpg");
+}
+.anime-5{
+    background-image: url("wallpaperflare.com_wallpaper (13).jpg");
+}
+.anime-6{
+    background-image: url("wallpaperflare.com_wallpaper (14).jpg");
+}

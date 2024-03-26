@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 1s;
+    scroll-behavior: smooth;
+    font-family: 'MedievalSharp', cursive;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+}
+
+.food-wrapper {
+    height: 130vh;
+    /* border: 5px solid red; */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.line-food {
+    border-right: 3px solid #fe222dcc;
+    height: 12vh;
+    width: 1px;
+    opacity: 0.5;
+}
+
+.food-header {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.food-header>h2 {
+    font-size: 45px;
+    color: #fe222dcc;
+}
+
+.food-header>h3 {
+    font-size: 35px;
+    color: rgb(152, 152, 152);
+}
+
+.food-header>h3:hover {
+    cursor: pointer;
+    color: white;
+}
+
+
+.food-header>p {
+    width: 80%;
+    font-size: 17px;
+    padding: 16px;
+    color: rgb(135, 133, 133);
+    letter-spacing: 3px;
+}
+
+.food {
+    width: 100%;
+    height: 50vh;
+    padding: 20px;
+}
+
+.img-food {
+    width: 45vw;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.img-food1 {
+    background-image: url("pexels-rachel-claire-5531482.jpg");
+}
+
+.img-food2 {
+    background-image: url("pexels-chevanon-photography-359993.jpg");
+}
+
+.img-food:hover {
+    transform: scale(1.05);
+}
+
+.food-content {
+    height: 100%;
+    width: 45vw;
+}
+
+.inner-food-wrapper>h2 {
+    color: #fe222dcc;
+    font-size: 35px;
+}
+
+.inner-food-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.inner-food-wrapper>h3 {
+    font-size: 30px;
+    padding: 10px 0px;
+    color: rgb(152, 152, 152);
+}
+
+.inner-food-wrapper>h3:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.inner-food-wrapper>p {
+    font-size: 14px;
+    line-height: 28px;
+    color: rgb(152, 152, 152);
+}
+
+.inner-food-wrapper>p>span {
+    color: rgb(103, 102, 102);
+}
+
+.inner-food-wrapper>button {
+    width: 120px;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(152, 152, 152);
+    background-color: transparent;
+    border-radius: 50px;
+    border: 2px solid rgb(152, 152, 152);
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.inner-food-wrapper>button:hover {
+    color: #eb3c10d3;
+    border-color: #eb3c10d3;
+}
+
+.food {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.food2 {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+@media screen and (max-width: 1024px) and (min-width:789px) {
+    .food-header>h2 {
+        font-size: 35px;
+    }
+
+    .food-header>h3 {
+        font-size: 25px;
+    }
+
+    .food-header>p {
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+
+    .inner-food-wrapper>h2 {
+        font-size: 25px;
+    }
+
+    .inner-food-wrapper>h3 {
+        font-size: 20px;
+    }
+
+    .inner-food-wrapper>p {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .inner-food-wrapper>button {
+        width: 100px;
+        padding: 6px;
+        font-size: 13px;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 788px) and (min-width:0px) {
+    .food-header>h2 {
+        font-size: 28px;
+    }
+
+    .food-header>h3 {
+        font-size: 22px;
+    }
+
+    .food-header>p {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .food-wrapper {
+        height: 200vh;
+    }
+
+    .food {
+        width: 100%;
+        height: 80vh;
+        padding: 20px;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+    .inner-food-wrapper>h2 {
+        font-size: 25px;
+        padding: 10px 0px;
+    }
+
+    .inner-food-wrapper>h3 {
+        font-size: 15px;
+    }
+
+    .inner-food-wrapper>p {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 2px;
+    }
+
+    .inner-food-wrapper>button {
+        width: 100px;
+        padding: 6px;
+        font-size: 13px;
+        margin-top: 15px;
+    }
+
+    .img-food {
+        width: 100%;
+        height: 60vh;
+        border: 2px;
+    }
+
+    .food-content {
+        height: 45vh;
+        width: 100%;
+    }
+}
